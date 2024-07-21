@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCSS Product Survey Form</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  </head>
+  <body>
+    <div>
+      <h1 id="title">HCSS Product Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve our platform</p>
+    <form id="survey-form" action="sclowe1995@gmail.com" method="post">
+      <fieldset>
+        <label id="name-label" for="name">Name <input id="name" type="text" name="name" placeholder="Enter your name" required></label>
+        <label id="company-label" for="company-name">Company Name <input id="company-name" type="text" name="company-name" placeholder="Enter your company" required></label>
+        <label id="email-label" for="email">Email <input id="email" type="email" name="email" placeholder="Enter your email" required></label>
+      </fieldset>
+      <fieldset>
+        <label for="role">Which option bests describes your current role?
+          <select id="role" name="role">
+            <option value="" disabled selected hidden>Please Choose...</option>
+            <option value="Executive">Executive</option>
+            <option value="Project Manager">Project Manager</option>
+            <option value="Estimator">Estimator</option>
+            <option value="Supervisor">Supervisor</option>
+            <option value="Foreman">Foreman</option>
+            <option value="Laborer">Laborer</option>
+            <option value="Human Resources">Human Resources</option>
+            <option value="Accounting/Payroll-Specialist">Accounting/Payroll Specialist</option>
+            <option value="Other">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <p>Would you recommend HCSS products to another company?</p>
+        <label class="radio-label"><input class="inline-display" type="radio" value="definitely" name="recommend" checked>Definitely</input></label>
+        <label class="radio-label"><input class="inline-display" type="radio" value="maybe" name="recommend">Maybe</input></label>
+        <label class="radio-label"><input class="inline-display" type="radio" value="no" name="recommend">No</input></label>
+        <label class="radio-label"><input class="inline-display" type="radio" value="not-sure" name="recommend">Not Sure</input></label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">Which product do you use the most on a daily basis?
+          <select id="dropdown" name="most-used-product">
+            <option value="HeavyBid">HeavyBid</option>
+            <option value="HeavyJob">HeavyJob</option>
+            <option value="Project-Management">Project Management</option>
+            <option value="HCSS-Forms">HCSS Forms</option>
+            <option value="HCSS-Safety">HCSS Safety</option>
+            <option value="HCSS-Plans">HCSS Plans</option>
+            <option value="HCSS-Field">HCSS Field</option>
+            <option value="HCSS-myField">HCSS myField</option>
+            <option value="E360-Mobile">E360 Mobile</option>
+            <option value="E360-Manager">E360 Manager</option>
+            <option value="Telematics">Telematics</option>
+            <option value="Dispatcher">Dispatcher</option>
+            <option value="E-logs">E-logs</option>
+            <option value="HCSS-Insights">HCSS Insights</option>
+            <option value="HCSS-Setups">HCSS Setups</option>
+          </select>
+        </label>
+        <label id="number-label" for="number">Approximately how many days in a week do you use the selected product? <input id="number" name="frequency" type="number" min="1" max="7" placeholder= "1" value="1" required></label>
+      </fieldset>
+      <fieldset>
+        <p>What would you like to see improved? (Check all that apply)</p>
+        <label class="checkbox-label"><input class="inline-display" type="checkbox" name="improve-product" value="HeavyBid">HeavyBid</label>
+        <label class="checkbox-label"><input class="inline-display" type="checkbox" name="improve-product" value="HeavyJob">HeavyJob</label>
+        <label class="checkbox-label"><input class="inline-display" type="checkbox" name="improve-product" value="Project-Management">Project Management</label>
+        <label class="checkbox-label"><input class="inline-display" type="checkbox" name="improve-product" value="HCSS-Forms">HCSS Forms</label>
+        <label class="checkbox-label"><input class="inline-display" type="checkbox" name="improve-product" value="HCSS-Safety">HCSS Safety</label>
+        <label class="checkbox-label"><input class="inline-display" type="checkbox" name="improve-product" value="HCSS-Plans">HCSS Plans</label>
+        <label class="checkbox-label"><input class="inline-display" type="checkbox" name="improve-product" value="HCSS-Field">HCSS Field</label>
+        <label class="checkbox-label"><input class="inline-display" type="checkbox" name="improve-product" value="HCSS-myField">HCSS myField</label>
+        <label class="checkbox-label"><input class="inline-display" type="checkbox" name="improve-product" value="E360-Mobile">E360 Mobile</label>
+        <label class="checkbox-label"><input class="inline-display" type="checkbox" name="improve-product" value="E360-Manager">E360 Manager</label>
+        <label class="checkbox-label"><input class="inline-display" type="checkbox" name="improve-product" value="Telematics">Telematics</label>
+        <label class="checkbox-label"><input class="inline-display" type="checkbox" name="improve-product" value="Dispatcher">Dispatcher</label>
+        <label class="checkbox-label"><input class="inline-display" type="checkbox" name="improve-product" value="E-logs">E-logs</label>
+        <label class="checkbox-label"><input class="inline-display" type="checkbox" name="improve-product" value="HCSS-Insights">HCSS Insights</label>
+        <label class="checkbox-label"><input class="inline-display" type="checkbox" name="improve-product" value="HCSS-Setups">HCSS Setups</label>
+      </fieldset>
+      <label id="suggestion-label" for="suggestions">Any comments or Product Suggestions?<textarea id="suggestions" name="suggestions" rows="5" cols="50" placeholder="My foremen in the field would like to see..."></textarea></label>
+      <input id="submit" type="submit">
+    </form>
+    </div>
+  </body>
+</html>
